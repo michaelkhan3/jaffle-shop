@@ -3,7 +3,7 @@ snapshots:
     relation: ref('stg_customers')
     description:  A snapshot to track the change history of the stg_customers table.
     config:
-      +strategy: check
-      +check_cols: [customer_name]
+      strategy: check
+      check_cols: [customer_name]
       unique_key: customer_id
       hard_deletes: invalidate
